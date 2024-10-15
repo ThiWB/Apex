@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <title>Login</title>
+        <link rel="stylesheet" href="AddRiskArea.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionar Área de Risco</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="informations">
+            <h1>Central de Prevenção de Desastres |</h1>
+            <div class="buttons">
+                    <a href="#">Usuário</a>
+                    <a href="RiskAreas.html">Riscos</a>
+                    <a href="#">Sobre</a>
+                </div>
+            </div>
+            
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Adicionar Área de Risco</h2>
+                <form>
+                    <input type="text" id="incidentAdress" placeholder="Endereço do Incidente" required>
+                    <input type="text" id="incidentHour" placeholder="Horário do Incidente" required>
+                    <input type="text" id="incidentType" placeholder="Tipo de Incidente" required>
+                    <input type="text" id="riskDescription" placeholder="Descrição do Risco" required>
+                    <a class="button" onclick="submitRiskArea()" style="cursor: pointer;">Enviar</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="inf">
+            <p class="title">Home</p>
+
+            <div class="main-inf">
+                <h3 class="texto">Página inicial, pesquise sobre Áreas de Risco ou adicione
+                novas Áreas que estejam com intercorrências.
+                </h3>
+            </div>
+        </div>
+
+        <script src="ScriptRisk.js"></script>
+
+    </body>
+
+</html>
+
+
+
