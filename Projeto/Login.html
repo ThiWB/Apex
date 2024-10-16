@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-        <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="Login.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-
-        <div class="informations">
-            <h1>Central de Prevenção de Desastres |</h1>
-            <div class="buttons">
-                    <a href="#">Entrar</a>
-                    <a href="#">Sobre</a>
-                </div>
-            </div>
-            
-        <div class="login-container">
-            <div class="login-form">
-                <h2>Crie sua Conta</h2>
-                <form>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <input type="password" id="password" placeholder="Senha" required>
-                    <br>
-                    <br>
-                    <button onclick="location.href='register.html'">Registrar</button>
-                    <button onclick="googleLogin()">Login com Google</button>
-                </form>
-            </div>
+<body>
+    <div class="informations">
+        <h1>Central de Prevenção de Desastres |</h1>
+        <div class="buttons">
+            <a href="#">Entrar</a>
+            <a href="#">Sobre</a>
         </div>
+    </div>
 
-        <div class="inf">
-            <p class="title">Crie sua Conta!</p>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Crie sua Conta</h2>
+            <form id="registrationForm" onsubmit="return handleRegistration(event)">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <br><br>
+                <button type="submit">Criar Conta</button>
+            </form>
 
-            <div class="main-inf">
-                <h3 class="texto">Primeiro passo para começar a usar todos os recursos que nós oferecemos!
+            <h2>Já possui uma conta? Faça login</h2>
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Senha" required>
+                <br><br>
+                <button type="submit">Login</button>
+                <button type="button" onclick="googleLogin()">Login com Google</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="inf">
+        <p class="title">Crie sua Conta!</p>
+        <div class="main-inf">
+            <h3 class="texto">Primeiro passo para começar a usar todos os recursos que nós oferecemos!
                 Cadastre-se e obtenha, de forma gratuita, Previsões Climáticas, Informativos de possíveis
                 Intercorrências Naturais ou humanas.
-            </div>
+            </h3>
         </div>
-    </body>
+    </div>
 
+    <script src="ScriptLogin.js"></script>
+</body>
 </html>

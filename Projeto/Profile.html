@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
+<head>
+    <link rel="stylesheet" href="Profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
 
-        <link rel="stylesheet" href="Profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perfil</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-
-        <div class="informations">
-            <h1>Central de Prevenção de Desastres |</h1>
-            <div class="buttons">
-                    <a href="#">Registrar</a>
-                    <a href="#">Sobre</a>
-                </div>
-            </div>
-            
-        <div class="login-container">
-            <div class="login-form">
-                <h2>Registrar</h2>
-                <form>
-                    <h2>Perfil</h2>
-                    <label>Nome: <span id="nameDisplay"></span></label><br>
-                    <label>Telefone: <span id="phoneDisplay"></span></label><br>
-                    <button onclick="location.href='register.html'">Editar Perfil</button>
-                </form>
-            </div>
+<body>
+    <div class="informations">
+        <h1>Central de Prevenção de Desastres |</h1>
+        <div class="buttons">
+            <a href="Home.html">Início</a>
+            <a href="RiskAreas.html">Riscos</a>
+            <a href="Weather.html">Clima</a>
+            <a href="Profile.html">Perfil</a>
+            <a href="#">Sobre</a>
         </div>
-
-        <div class="inf">
-            <p class="title">Registre-se!</p>
-
-            <div class="main-inf">
-                <h3 class="texto">Registre suas credenciais para colaborar com a sua Segurança e Saúde!
-                Tornando-se mais fácil receber ajuda com seu Registro, preencha os campos ao lado, e termine
-                sua Inscrição na nossa Página!
-                </h3>
-            </div>
+    </div>
+    
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Perfil</h2>
+            <label>Nome: <span id="nameDisplay"></span></label><br>
+            <label>Telefone: <span id="phoneDisplay"></span></label><br>
+            <label>Endereço: <span id="addressDisplay"></span></label><br>
+            <label>Tipo Sanguíneo: <span id="bloodTypeDisplay"></span></label><br>
+            <label>Deficiências: <span id="disabilitiesDisplay"></span></label><br>
+            <label>Alergias: <span id="allergiesDisplay"></span></label><br>
+            <button onclick="location.href='register.html'">Editar Perfil</button>
         </div>
-    </body>
+    </div>
 
+    <div class="inf">
+        <p class="title">Registre-se!</p>
+        <div class="main-inf">
+            <h3 class="texto">Registre suas credenciais para colaborar com a sua Segurança e Saúde!</h3>
+        </div>
+    </div>
+
+    <script src="ScriptProfile.js"></script>
+</body>
 </html>
